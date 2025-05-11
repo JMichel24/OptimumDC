@@ -22,13 +22,6 @@ body {
   object-fit: contain;
 }
 
-/* NAVBAR */
-.navbar {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
 .navbar .nav-links {
   list-style: none;
   display: flex;
@@ -49,45 +42,6 @@ body {
 
 .navbar .nav-links a:hover {
   color: #b34e9f;
-}
-
-/* Ícono de hamburguesa */
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #d678b5;
-  margin-left: 1rem;
-  transition: color 0.3s ease;
-}
-
-.hamburger:hover {
-  color: #b34e9f;
-}
-
-/* Responsive Navbar */
-@media (max-width: 768px) {
-  .navbar .nav-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #ffe4f2;
-    flex-direction: column;
-    width: 200px;
-    display: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 0 0 10px 10px;
-    padding: 1rem;
-    z-index: 999;
-  }
-
-  .navbar .nav-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
 }
 
 /* Sección About */
