@@ -122,8 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-});
-document.addEventListener('DOMContentLoaded', function () {
+
+  // Alerta tras enviar formulario de contacto
   const contactForm = document.querySelector('.contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function () {
