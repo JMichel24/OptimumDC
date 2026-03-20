@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTIMUM - Site Header</title>
+    <link rel="stylesheet" href="optimum-style-v6.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logotype Integration -->
+            <div class="logo-area">
+                <img src="Logo/Logo2.png" alt="OPTIMUM Logo" class="site-logo">
+            </div>
+
+            <!-- Navigation Structure -->
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link"><i class="fa-solid fa-house"></i> <span class="nav-text">INICI<span class="blink-o">O</span></span></a></li>
+                    <li><a href="#sobre-nosotros" class="nav-link">SOBRE NOSOTROS</a></li>
+                    <li><a href="#videos" class="nav-link"><i class="fa-solid fa-play"></i> VIDEOS</a></li>
+                    <li><a href="#integrantes" class="nav-link">INTEGRANTES</a></li>
+                    <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="#" class="social-link youtube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="social-link instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre-nosotros" class="optimum-about animated">
+            <div class="opt-container">
+                <div class="opt-image-col">
+                    <div class="cute-frame">
+                        <i class="fa-solid fa-star cute-frame-star"></i>
+                        <img src="img_grupo/8.jpg" alt="OPTIMUM Team Photo" class="about-image">
+                    </div>
+                </div>
+                <div class="opt-text-col">
+                    <h2 class="opt-title">
+                        <i class="fa-solid fa-crown title-icon"></i> 
+                        OPTIMUM: 10 Años de Trayectoria
+                        <i class="fa-solid fa-star blinking-star"></i>
+                    </h2>
+                    <div class="cute-separator">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <p class="opt-description">
+                        Optimum es un grupo con <b>10 años</b> de experiencia en el Dance Cover. Representaron a <b>México</b> en <b>Corea del Sur</b> en el Stage K. Han obtenido múltiples podios nacionales incluyendo el <b>2do lugar</b> en Korean Brand Expo colaborando con Nomad.
+                    </p>
+                    <div class="btn-wrapper" style="justify-content: flex-start;">
+                        <a href="#contacto" class="btn btn-cute" style="border-radius: 50px; padding: 14px 35px;">CONÓCENOS MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTEGRANTES Section -->
+        <section id="integrantes" class="member-section animated">
+            <div class="member-container">
+                <!-- Left Column: Member Info -->
+                <div class="member-text-col">
+                    <h2 class="member-title">
+                        <i class="fa-solid fa-star"></i> 
+                        LORE: Pasión y Experiencia K-pop
+                        <i class="fa-solid fa-star blinking-star-small"></i>
+                    </h2>
+                    <div class="member-separator">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="member-description">
+                        Hola soy Lore, mi grupo favorito es <b>Super Junior</b>, llevo siendo fan desde el <b>2010</b>. Tengo <b>12 años</b> en el dance cover, doy <b>clases de baile</b>, y tengo una <b>tienda online</b> de Mangas y coleccionables. Amo a los <b>perritos</b> y el <b>café</b>.
+                    </p>
+                </div>
+
+                <!-- Right Column: Automatic Carousel -->
+                <div class="member-image-col">
+                    <div class="member-carousel-frame">
+                        <div class="carousel-container">
+                            <div class="carousel-slide active"><img src="Lore/1.png" alt="Lore 1"></div>
+                            <div class="carousel-slide"><img src="Lore/IMG_20241027_074459 (1).remini-enhanced.png" alt="Lore 2"></div>
+                            <div class="carousel-slide"><img src="Lore/IMG_38L78.jpg" alt="Lore 3"></div>
+                            <div class="carousel-slide"><img src="Lore/Sin título-1.png" alt="Lore 4"></div>
+                        </div>
+                        <!-- Carousel Decorations -->
+                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
+                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other sections will go here -->
+    </main>
+    <!-- Vanilla JS for Lore Carousel -->
+    <script src="lore-carousel.js" defer></script>
+</body>
+</html>
