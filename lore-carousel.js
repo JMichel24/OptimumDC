@@ -29,17 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.getElementById(containerId);
         if (!container || !imagesArray || imagesArray.length === 0) return;
 
-        // Clear container and build DOM dynamically to simplify HTML
+        // Clear container and build DOM dynamically
         container.innerHTML = '';
         
         imagesArray.forEach((src, index) => {
             const slide = document.createElement('div');
-            // Ensure proper class and spacing, first element gets active class
             slide.className = 'carousel-slide' + (index === 0 ? ' active' : '');
             
             const img = document.createElement('img');
             img.src = src;
             img.alt = `Slide ${index + 1} for ${containerId}`;
+            
+            // WPO: Native lazy loading and async decoding
+            img.loading = 'lazy';
+            img.decoding = 'async';
             
             slide.appendChild(img);
             container.appendChild(slide);
@@ -49,20 +52,36 @@ document.addEventListener('DOMContentLoaded', () => {
         if (slides.length <= 1) return;
 
         let currentSlide = 0;
+        let animationInterval = null;
 
         function nextSlide() {
-            // Remove active class from current
             slides[currentSlide].classList.remove('active');
-            
-            // Increment index
             currentSlide = (currentSlide + 1) % slides.length;
-            
-            // Add active class to next
             slides[currentSlide].classList.add('active');
         }
 
-        // Start automatic carousel every 'interval' milliseconds independently
-        setInterval(nextSlide, interval);
+        /**
+         * WPO: Performance Intersection Observer
+         * Only start the carousel interval when it's visible to the user.
+         */
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Start animation if not already running
+                    if (!animationInterval) {
+                        animationInterval = setInterval(nextSlide, interval);
+                    }
+                } else {
+                    // Pause animation to save resources when not in view
+                    if (animationInterval) {
+                        clearInterval(animationInterval);
+                        animationInterval = null;
+                    }
+                }
+            });
+        }, { threshold: 0.1 }); // Trigger when 10% visible
+
+        observer.observe(container);
     }
 
     // Initialize all carousels
