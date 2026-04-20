@@ -21,7 +21,7 @@
         <div class="header-container">
             <!-- Logotype Integration -->
             <div class="logo-area">
-                <img src="Logo/Logo2.png" alt="OPTIMUM Logo" class="site-logo">
+                <img src="Logo/Logo2.png" alt="OPTIMUM Logo" class="site-logo" decoding="async">
             </div>
 
             <!-- Navigation Structure -->
@@ -50,7 +50,7 @@
                 <div class="opt-image-col">
                     <div class="cute-frame">
                         <i class="fa-solid fa-star cute-frame-star"></i>
-                        <img src="img_grupo/GrupoN.png" alt="Optimum Kpop Dance Cover - Nueva Alineación" class="about-image" loading="lazy">
+                        <img src="img_grupo/GrupoN.png" alt="Optimum Kpop Dance Cover - Nueva Alineación" class="about-image" loading="lazy" decoding="async">
                     </div>
                 </div>
                 <div class="opt-text-col">
@@ -91,7 +91,10 @@
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/-xFLj1i9Fvo?rel=0" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                <div class="lite-youtube" data-id="-xFLj1i9Fvo">
+                                    <img src="https://img.youtube.com/vi/-xFLj1i9Fvo/hqdefault.jpg" alt="Stray Kids - CASE 143 Thumbnail" loading="lazy" decoding="async">
+                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                </div>
                             </div>
                         </div>
                         <div class="video-info">
@@ -103,7 +106,10 @@
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/0B9QFDYPlgs?rel=0" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                <div class="lite-youtube" data-id="0B9QFDYPlgs">
+                                    <img src="https://img.youtube.com/vi/0B9QFDYPlgs/hqdefault.jpg" alt="XG - SHOOTING STAR Thumbnail" loading="lazy" decoding="async">
+                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                </div>
                             </div>
                         </div>
                         <div class="video-info">
@@ -115,7 +121,10 @@
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/bI8iEPuRzY0?rel=0" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                <div class="lite-youtube" data-id="bI8iEPuRzY0">
+                                    <img src="https://img.youtube.com/vi/bI8iEPuRzY0/hqdefault.jpg" alt="LE SSERAFIM - ANTIFRAGILE Thumbnail" loading="lazy" decoding="async">
+                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                </div>
                             </div>
                         </div>
                         <div class="video-info">
@@ -127,7 +136,10 @@
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/SalTcg_PuTY?rel=0" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                <div class="lite-youtube" data-id="SalTcg_PuTY">
+                                    <img src="https://img.youtube.com/vi/SalTcg_PuTY/hqdefault.jpg" alt="NCT DREAM - Candy Thumbnail" loading="lazy" decoding="async">
+                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                </div>
                             </div>
                         </div>
                         <div class="video-info">
@@ -139,7 +151,10 @@
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/7wTNp6F5MaE?rel=0" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                <div class="lite-youtube" data-id="7wTNp6F5MaE">
+                                    <img src="https://img.youtube.com/vi/7wTNp6F5MaE/hqdefault.jpg" alt="IVE - After LIKE Thumbnail" loading="lazy" decoding="async">
+                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                </div>
                             </div>
                         </div>
                         <div class="video-info">
@@ -151,7 +166,10 @@
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/M8CAvVZSkkY?rel=0" allowfullscreen loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                <div class="lite-youtube" data-id="M8CAvVZSkkY">
+                                    <img src="https://img.youtube.com/vi/M8CAvVZSkkY/hqdefault.jpg" alt="NewJeans - OMG Thumbnail" loading="lazy" decoding="async">
+                                    <div class="play-button"><i class="fa-solid fa-play"></i></div>
+                                </div>
                             </div>
                         </div>
                         <div class="video-info">
@@ -281,10 +299,8 @@
                 <!-- Image Column: ALO -->
                 <div class="member-image-col">
                     <div class="member-carousel-frame">
-                        <div class="carousel-container">
-                            <div class="carousel-slide active">
-                                <img src="Alo/AloN.png" alt="Alo Optimum" loading="lazy">
-                            </div>
+                        <div id="carousel-alo" class="carousel-container">
+                            <!-- Populated dynamically via lore-carousel.js -->
                         </div>
                         <i class="fa-solid fa-heart frame-deco heart-top"></i>
                         <i class="fa-solid fa-star frame-deco star-bottom"></i>
@@ -314,10 +330,8 @@
                 <!-- Image Column: DANI -->
                 <div class="member-image-col">
                     <div class="member-carousel-frame">
-                        <div class="carousel-container">
-                            <div class="carousel-slide active">
-                                <img src="Dani/DaniN.png" alt="Dani Optimum" loading="lazy">
-                            </div>
+                        <div id="carousel-dani" class="carousel-container">
+                            <!-- Populated dynamically via lore-carousel.js -->
                         </div>
                         <i class="fa-solid fa-heart frame-deco heart-top"></i>
                         <i class="fa-solid fa-star frame-deco star-bottom"></i>
@@ -347,10 +361,8 @@
                 <!-- Image Column: NANA -->
                 <div class="member-image-col">
                     <div class="member-carousel-frame">
-                        <div class="carousel-container">
-                            <div class="carousel-slide active">
-                                <img src="Nana/NanaN.png" alt="Nana Optimum" loading="lazy">
-                            </div>
+                        <div id="carousel-nana" class="carousel-container">
+                            <!-- Populated dynamically via lore-carousel.js -->
                         </div>
                         <i class="fa-solid fa-heart frame-deco heart-top"></i>
                         <i class="fa-solid fa-star frame-deco star-bottom"></i>

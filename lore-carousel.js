@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'Sara/SaraN1.png'
     ];
 
+    const aloImages = ['Alo/AloN.png'];
+    const daniImages = ['Dani/DaniN.png'];
+    const nanaImages = ['Nana/NanaN.png'];
+
     /**
      * Initializes a K-pop carousel inside a specified container
      * @param {string} containerId - The ID of the container element
@@ -84,6 +88,35 @@ document.addEventListener('DOMContentLoaded', () => {
     initKpopCarousel('carousel-lore', loreImages);
     initKpopCarousel('carousel-pau', pauImages);
     initKpopCarousel('carousel-sara', saraImages);
+    initKpopCarousel('carousel-alo', aloImages);
+    initKpopCarousel('carousel-dani', daniImages);
+    initKpopCarousel('carousel-nana', nanaImages);
+
+    /**
+     * WPO: Lite YouTube Embeds logic
+     * Loads the high-res thumbnail and only injects the iframe on click.
+     */
+    function initLiteYouTube() {
+        const liteVideos = document.querySelectorAll('.lite-youtube');
+        
+        liteVideos.forEach(video => {
+            video.addEventListener('click', function() {
+                const videoId = this.getAttribute('data-id');
+                const iframe = document.createElement('iframe');
+                
+                iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`);
+                iframe.setAttribute('frameborder', '0');
+                iframe.setAttribute('allowfullscreen', '1');
+                iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                
+                // Replace content with iframe
+                this.innerHTML = '';
+                this.appendChild(iframe);
+            });
+        });
+    }
+
+    initLiteYouTube();
 
     /**
      * UI/UX: Sticky Header & ScrollSpy Logic
