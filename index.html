@@ -15,6 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Simultaneous High Priority Preload for Member Assets -->
+    <link rel="preload" as="image" href="OPTIMUM/Lore/LoreN.png">
+    <link rel="preload" as="image" href="OPTIMUM/Pau/PauN.png">
+    <link rel="preload" as="image" href="OPTIMUM/Sara/SaraN.png">
+    <link rel="preload" as="image" href="OPTIMUM/Alo/AloN.png">
+    <link rel="preload" as="image" href="OPTIMUM/Dani/DaniN.png">
+    <link rel="preload" as="image" href="OPTIMUM/Nana/NanaN.png">
 </head>
 <body>
     <header id="inicio" class="main-header">
@@ -182,7 +190,7 @@
 
 
         <!-- INTEGRANTES Section -->
-        <section id="integrantes" class="member-section animated">
+        <section id="integrantes" class="member-section">
             <div class="member-container">
                 <!-- Left Column: Member Info -->
                 <div class="member-text-col">
@@ -203,7 +211,7 @@
                 <div class="member-image-col">
                     <div class="member-carousel-frame">
                         <div class="carousel-container static-profile">
-                            <img src="OPTIMUM/Lore/LoreN.png" alt="Lore Optimum" width="500" height="500" fetchpriority="high" loading="lazy" decoding="async">
+                            <img src="OPTIMUM/Lore/LoreN.png" alt="Lore Optimum" width="500" height="500" fetchpriority="high" decoding="sync">
                         </div>
                         <!-- Carousel Decorations -->
                         <i class="fa-solid fa-heart frame-deco heart-top"></i>
@@ -214,7 +222,7 @@
         </section>
 
         <!-- INTEGRANTES Section (PAU) -->
-        <section class="member-section animated">
+        <section class="member-section">
             <!-- Used "reverse" class for zebra layout on Desktop. Responsive maintains Image Top in Mobile -->
             <div class="member-container reverse">
                 <!-- Text Column: PAU -->
@@ -236,7 +244,7 @@
                 <div class="member-image-col">
                     <div class="member-carousel-frame">
                         <div class="carousel-container static-profile">
-                            <img src="OPTIMUM/Pau/PauN.png" alt="Pau Optimum" width="500" height="500" loading="lazy" decoding="async">
+                            <img src="OPTIMUM/Pau/PauN.png" alt="Pau Optimum" width="500" height="500" fetchpriority="high" decoding="sync">
                         </div>
                         <!-- Carousel Decorations -->
                         <i class="fa-solid fa-heart frame-deco heart-top"></i>
@@ -247,7 +255,7 @@
         </section>
 
         <!-- INTEGRANTES Section (SARA) -->
-        <section class="member-section animated">
+        <section class="member-section">
             <div class="member-container">
                 <!-- Text Column: SARA -->
                 <div class="member-text-col">
@@ -268,7 +276,7 @@
                 <div class="member-image-col">
                     <div class="member-carousel-frame">
                         <div class="carousel-container static-profile">
-                            <img src="OPTIMUM/Sara/SaraN.png" alt="Sara Optimum" width="500" height="500" loading="lazy" decoding="async">
+                            <img src="OPTIMUM/Sara/SaraN.png" alt="Sara Optimum" width="500" height="500" fetchpriority="high" decoding="sync">
                         </div>
                         <!-- Carousel Decorations -->
                         <i class="fa-solid fa-heart frame-deco heart-top"></i>
@@ -279,7 +287,7 @@
         </section>
 
         <!-- INTEGRANTES Section (ALO) -->
-        <section class="member-section animated">
+        <section class="member-section">
             <div class="member-container reverse">
                 <!-- Text Column: ALO -->
                 <div class="member-text-col">
@@ -300,7 +308,7 @@
                 <div class="member-image-col">
                     <div class="member-carousel-frame">
                         <div class="carousel-container static-profile">
-                            <img src="OPTIMUM/Alo/AloN.png" alt="Alo Optimum" width="500" height="500" loading="lazy" decoding="async">
+                            <img src="OPTIMUM/Alo/AloN.png" alt="Alo Optimum" width="500" height="500" fetchpriority="high" decoding="sync">
                         </div>
                         <i class="fa-solid fa-heart frame-deco heart-top"></i>
                         <i class="fa-solid fa-star frame-deco star-bottom"></i>
@@ -310,7 +318,7 @@
         </section>
 
         <!-- INTEGRANTES Section (DANI) -->
-        <section class="member-section animated">
+        <section class="member-section">
             <div class="member-container">
                 <!-- Text Column: DANI -->
                 <div class="member-text-col">
@@ -331,7 +339,7 @@
                 <div class="member-image-col">
                     <div class="member-carousel-frame">
                         <div class="carousel-container static-profile">
-                            <img src="OPTIMUM/Dani/DaniN.png" alt="Dani Optimum" width="500" height="500" loading="lazy" decoding="async">
+                            <img src="OPTIMUM/Dani/DaniN.png" alt="Dani Optimum" width="500" height="500" fetchpriority="high" decoding="sync">
                         </div>
                         <i class="fa-solid fa-heart frame-deco heart-top"></i>
                         <i class="fa-solid fa-star frame-deco star-bottom"></i>
@@ -341,7 +349,7 @@
         </section>
 
         <!-- INTEGRANTES Section (NANA) -->
-        <section class="member-section animated">
+        <section class="member-section">
             <div class="member-container reverse">
                 <!-- Text Column: NANA -->
                 <div class="member-text-col">
@@ -362,7 +370,7 @@
                 <div class="member-image-col">
                     <div class="member-carousel-frame">
                         <div class="carousel-container static-profile">
-                            <img src="OPTIMUM/Nana/NanaN.png" alt="Nana Optimum" width="500" height="500" loading="lazy" decoding="async">
+                            <img src="OPTIMUM/Nana/NanaN.png" alt="Nana Optimum" width="500" height="500" fetchpriority="high" decoding="sync">
                         </div>
                         <i class="fa-solid fa-heart frame-deco heart-top"></i>
                         <i class="fa-solid fa-star frame-deco star-bottom"></i>
