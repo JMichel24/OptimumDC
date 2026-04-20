@@ -1,22 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Member image arrays
     const loreImages = [
-        'Lore/1.png',
-        'Lore/IMG_20241027_074459 (1).remini-enhanced.png',
-        'Lore/IMG_38L78.jpg',
-        'Lore/Sin título-1.png'
+        'Lore/LoreN.png',
+        'Lore/LoreN1.png'
     ];
 
     const pauImages = [
-        'Pau/IMG_20241027_075013.jpg',
-        'Pau/IMG_38L87.jpg',
-        'Pau/Sin título-6.png'
+        'Pau/PauN.png',
+        'Pau/PauN1.png'
     ];
 
     const saraImages = [
-        'Sara/IMG_20241027_074616.jpg',
-        'Sara/IMG_39L03.jpg',
-        'Sara/Sin título-4.png'
+        'Sara/SaraN.png',
+        'Sara/SaraN1.png'
     ];
 
     /**
