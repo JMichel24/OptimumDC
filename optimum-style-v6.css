@@ -199,6 +199,15 @@ body::after {
 .member-carousel-frame{position:relative;padding:12px;background-color:var(--primary-red);border-radius:20px;box-shadow:0 15px 35px rgba(254, 33, 5, 0.2);width:100%;overflow:hidden;}
 .carousel-container{width:100%;aspect-ratio:1/1;border-radius:12px;overflow:hidden;position:relative;background:transparent;transform:translateZ(0);will-change:transform, opacity;image-rendering:-webkit-optimize-contrast;}
 .carousel-container img{width:100%;height:100%;object-fit:cover;display:block !important;opacity:1 !important;aspect-ratio:1/1;image-rendering:-webkit-optimize-contrast;transition:opacity 0.6s ease-in-out;}
+.frame-deco {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    z-index: 10;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
+}
+.heart-top { top: 15px; left: 15px; }
+.star-bottom { bottom: 15px; right: 15px; }
 .low-res-bg{position:absolute;top:0;left:0;width:100%;height:100%;filter:blur(15px);transform:scale(1.2);z-index:1;pointer-events:none;}
 
 /* Videos Section */
