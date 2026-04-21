@@ -64,7 +64,7 @@ body::after {
 }
 
 .site-logo {
-    max-width: 150px;
+    max-width: 150px !important;
     height: auto !important;
     object-fit: contain;
     display: block;
@@ -257,9 +257,9 @@ body::after {
 .form-group textarea {
     width: 100%;
     padding: 18px 25px;
-    background: #ffffff;
-    border: 2px solid var(--border-peach);
-    border-radius: 15px;
+    background: #ffffff !important;
+    border: 2px solid var(--border-peach) !important;
+    border-radius: 15px !important;
     color: #333;
     font-size: 16px;
     font-family: inherit;
@@ -269,12 +269,13 @@ body::after {
 .form-group input:focus, 
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-red);
+    border-color: #FE2105 !important;
+    box-shadow: 0 0 15px rgba(254, 33, 5, 0.1);
 }
 
 .btn-submit {
-    background: var(--primary-red);
-    color: #fff;
+    background: #FE2105 !important;
+    color: #fff !important;
     border: none;
     padding: 18px 50px;
     border-radius: 50px;
@@ -284,7 +285,7 @@ body::after {
     cursor: pointer;
     align-self: center;
     box-shadow: 0 10px 25px rgba(254, 33, 5, 0.3);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .btn-submit:hover {
@@ -293,7 +294,7 @@ body::after {
 }
 
 .site-logo-white {
-    max-width: 150px;
+    max-width: 150px !important;
     height: auto !important;
     filter: brightness(0) invert(1);
     margin-bottom: 25px;
