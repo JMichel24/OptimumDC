@@ -792,15 +792,28 @@ body::after {
     padding: 12px 40px;
     border-radius: 20px;
     border: none;
-    font-weight: 600;
+    font-weight: 800;
     cursor: pointer;
     text-transform: uppercase;
-    transition: background 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 8px 15px rgba(254, 33, 5, 0.15);
 }
 
 #contacto .btn-footer:hover {
     background-color: #ff4a36;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 12px 20px rgba(254, 33, 5, 0.3);
 }
+
+#form-container {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
 
 #contacto .social-links-footer {
     display: flex;

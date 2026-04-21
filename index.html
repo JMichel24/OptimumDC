@@ -422,20 +422,30 @@
     </main>
     <footer id="contacto" style="background-color: #111111; color: #ffffff; padding: 60px 20px; text-align: center;">
         <div style="max-width: 400px; margin: 0 auto;">
-            <h3 style="color: #FE2105; font-size: 24px; margin-bottom: 20px; font-weight: 800;">¡CONTÁCTANOS!</h3>
-            
-            <form action="https://formspree.io/f/xdkgdnqw" method="POST" class="form-footer">
-                <div class="form-group-footer">
-                    <input type="text" name="name" placeholder="Tu Nombre" required>
-                </div>
-                <div class="form-group-footer">
-                    <input type="email" name="_replyto" placeholder="Tu Email" required>
-                </div>
-                <div class="form-group-footer">
-                    <textarea name="message" rows="4" placeholder="Tu Mensaje" required></textarea>
-                </div>
-                <button type="submit" class="btn-footer">ENVIAR</button>
-            </form>
+            <!-- Toggle CTA Button -->
+            <div style="margin-bottom: 30px;">
+                <a href="#" id="toggle-contact" class="btn-footer" style="display: inline-block; padding: 15px 30px; font-size: 16px;">
+                    📩 ENVIAR UN MENSAJE / CONTACTO
+                </a>
+            </div>
+
+            <!-- Collapsible Form Container -->
+            <div id="form-container" style="display: none; opacity: 0; transition: opacity 0.5s ease;">
+                <h3 style="color: #FE2105; font-size: 24px; margin-bottom: 20px; font-weight: 800;">¡CONTÁCTANOS!</h3>
+                <form action="https://formspree.io/f/xdkgdnqw" method="POST" class="form-footer">
+                    <div class="form-group-footer">
+                        <input type="text" name="name" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group-footer">
+                        <input type="email" name="_replyto" placeholder="Tu Email" required>
+                    </div>
+                    <div class="form-group-footer">
+                        <input type="hidden" name="_subject" value="Nuevo contacto desde OptimumDC">
+                        <textarea name="message" rows="4" placeholder="Tu Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-footer">ENVIAR AHORA</button>
+                </form>
+            </div>
 
             <div class="social-links-footer">
                 <a href="https://www.instagram.com/optimum_dc/" class="social-icon-footer" target="_blank" title="Instagram">
@@ -469,10 +479,46 @@
 
         // Close menu when a link is clicked
         document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', (e) => {
                 nav.classList.remove('active');
                 btn.classList.remove('open');
+
+                // If it's the contact link, trigger the footer toggle
+                if (link.getAttribute('href') === '#contacto') {
+                    e.preventDefault();
+                    openContactForm();
+                }
             });
+        });
+
+        // Contact Toggle Logic
+        const contactBtn = document.getElementById('toggle-contact');
+        const formArea = document.getElementById('form-container');
+
+        const openContactForm = () => {
+            if (formArea.style.display === 'none' || formArea.style.display === '') {
+                formArea.style.display = 'block';
+                // Trigger reflow for transition
+                formArea.offsetHeight;
+                formArea.style.opacity = '1';
+                contactBtn.innerText = 'CERRAR FORMULARIO';
+                
+                // Smooth scroll into view
+                setTimeout(() => {
+                    formArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 100);
+            } else {
+                formArea.style.opacity = '0';
+                setTimeout(() => {
+                    formArea.style.display = 'none';
+                    contactBtn.innerText = '📩 ENVIAR UN MENSAJE / CONTACTO';
+                }, 500);
+            }
+        };
+
+        contactBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            openContactForm();
         });
     </script>
 </body>
