@@ -57,14 +57,22 @@ body::after {
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo-container {
+    flex-shrink: 0;
+    display: flex;
     align-items: center;
 }
 
 .site-logo {
-    max-width: 150px !important;
+    max-width: 60px !important;
+    width: 60px !important;
     height: auto !important;
     object-fit: contain;
     display: block;
@@ -221,10 +229,9 @@ body::after {
     line-height: 1.3;
 }
 
-.member-description {
-    font-size: 17px;
-    line-height: 1.65;
-    color: #444;
+.member-description b {
+    color: var(--primary-red) !important;
+    font-weight: 800;
 }
 
 .member-image-col {
