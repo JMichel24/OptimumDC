@@ -324,7 +324,7 @@ body::after {
 
 .opt-description b {
     font-weight: 800;
-    color: inherit;
+    color: var(--primary-red);
 }
 
 .cute-separator {
