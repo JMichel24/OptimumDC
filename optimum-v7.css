@@ -279,16 +279,47 @@ body::after {
 
 .video-card {
     background: var(--primary-red);
-    padding: 15px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
 }
 
 .video-wrapper {
-    aspect-ratio: 16/9;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     background: #000;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+}
+
+.lite-youtube {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.video-info {
+    padding: 12px 5px;
+    background: var(--primary-red);
+    text-align: center;
+}
+
+.video-cover-name {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 /* Footer & Contact Form */
