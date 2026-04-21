@@ -95,9 +95,11 @@ body::after {
 .videos-section {
     width: 100%;
     padding: 100px 20px;
+    margin-bottom: 60px;
     position: relative;
     display: block;
     clear: both;
+    overflow: hidden;
 }
 
 /* About Section */
