@@ -94,8 +94,7 @@ body::after {
 .member-section, 
 .videos-section {
     width: 100%;
-    padding: 100px 20px;
-    margin-bottom: 60px;
+    padding: 80px 20px;
     position: relative;
     display: block;
     clear: both;
@@ -256,6 +255,7 @@ body::after {
 .contact-block {
     max-width: 500px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .contact-form {
@@ -275,6 +275,7 @@ body::after {
     font-size: 16px;
     font-family: inherit;
     transition: all 0.3s ease;
+    text-align: left;
 }
 
 .form-group input:focus, 
