@@ -35,6 +35,10 @@
                     style="width: 60px !important; height: auto;">
             </div>
 
+            <div id="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
             <!-- Navigation Structure -->
             <nav class="main-nav">
                 <ul class="nav-menu">
@@ -455,6 +459,22 @@
     </a>
     <!-- Vanilla JS for Lore Carousel -->
     <script src="lore-carousel.js" defer></script>
+    <script>
+        const btn = document.getElementById('hamburger-menu');
+        const nav = document.querySelector('.main-nav');
+        btn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            btn.classList.toggle('open');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                btn.classList.remove('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
