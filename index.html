@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OPTIMUM - Site Header</title>
-    
+
     <!-- Speed: Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <link rel="stylesheet" href="optimum-v7.css">
-    <!-- Inline Override for Absolute UI Reliability (Cache-Busting) -->
-    <style>
-        .site-logo { max-width: 60px !important; width: 60px !important; height: auto !important; }
-        .logo-container { flex-shrink: 0; display: flex; align-items: center; }
-        .opt-title, .member-title, .opt-description b, .member-description b { color: #FE2105 !important; }
-        .member-text-col, .opt-text-col { border-radius: 30px !important; box-shadow: 0 30px 60px rgba(0,0,0,0.08) !important; }
-    </style>
+    <link rel="stylesheet" href="optimum-style-v6.css">
     <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <!-- Simultaneous High Priority Preload for Member Assets -->
-    <link rel="preload" as="image" href="./Lore/LoreN.png" fetchpriority="high">
-    <link rel="preload" as="image" href="./Pau/PauN.png" fetchpriority="high">
-    <link rel="preload" as="image" href="./Sara/SaraN.png" fetchpriority="high">
-    <link rel="preload" as="image" href="./Alo/AloN.png" fetchpriority="high">
-    <link rel="preload" as="image" href="./Dani/DaniN.png" fetchpriority="high">
-    <link rel="preload" as="image" href="./Nana/NanaN.png" fetchpriority="high">
+    <link rel="preload" as="image" href="OPTIMUM/Lore/LoreN.png">
+    <link rel="preload" as="image" href="OPTIMUM/Pau/PauN.png">
+    <link rel="preload" as="image" href="OPTIMUM/Sara/SaraN.png">
+    <link rel="preload" as="image" href="OPTIMUM/Alo/AloN.png">
+    <link rel="preload" as="image" href="OPTIMUM/Dani/DaniN.png">
+    <link rel="preload" as="image" href="OPTIMUM/Nana/NanaN.png">
 </head>
+
 <body>
     <header id="inicio" class="main-header">
         <div class="header-container">
             <!-- Logotype Integration -->
-            <div class="logo-container">
+            <div class="logo-area">
                 <img src="Logo/Logo2.png" alt="OPTIMUM Logo" class="site-logo" decoding="async">
             </div>
 
             <!-- Navigation Structure -->
             <nav class="main-nav">
                 <ul class="nav-menu">
-                    <li><a href="#inicio" class="nav-link active"><i class="fa-solid fa-house"></i> <span class="nav-text">INICI<span class="blink-o">O</span></span></a></li>
+                    <li><a href="#inicio" class="nav-link active"><i class="fa-solid fa-house"></i> <span
+                                class="nav-text">INICI<span class="blink-o">O</span></span></a></li>
                     <li><a href="#nosotros" class="nav-link">SOBRE NOSOTROS</a></li>
                     <li><a href="#videos" class="nav-link"><i class="fa-solid fa-play"></i> VIDEOS</a></li>
                     <li><a href="#integrantes" class="nav-link">INTEGRANTES</a></li>
-                    <li><a href="#videos" class="nav-link"><i class="fa-solid fa-play"></i> VIDEOS</a></li>
+                    <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
                 </ul>
             </nav>
 
@@ -60,227 +56,387 @@
     </header>
 
     <main>
-        <!-- SECCIÓN 1: SOBRE NOSOTROS -->
         <section id="nosotros" class="optimum-about animated">
             <div class="opt-container">
                 <div class="opt-image-col">
                     <div class="cute-frame">
                         <i class="fa-solid fa-star cute-frame-star"></i>
-                        <img src="./OPTIMUM/img_grupo/GrupoN.webp" alt="Optimum Kpop Dance Cover" class="about-image" loading="lazy" decoding="async" style="opacity: 1 !important; display: block;">
+                        <img src="img_grupo/GrupoN.png" alt="Optimum Kpop Dance Cover - Nueva Alineación"
+                            class="about-image" loading="lazy" decoding="async">
                     </div>
                 </div>
                 <div class="opt-text-col">
                     <h2 class="opt-title">
-                        <i class="fa-solid fa-crown title-icon"></i> 
-                        OPTIMUM: 10 AÑOS DE TRAYECTORIA
+                        <i class="fa-solid fa-crown title-icon"></i>
+                        OPTIMUM: 10 Años de Trayectoria
                         <i class="fa-solid fa-star blinking-star"></i>
                     </h2>
                     <div class="cute-separator">
                         <i class="fa-solid fa-heart"></i>
                     </div>
                     <p class="opt-description">
-                        Optimum es un grupo con <b>10 años</b> de experiencia en el Dance Cover. Representaron a <b>México</b> en <b>Corea del Sur</b> en el <b>Stage K</b>. Han obtenido múltiples <b>podios nacionales</b> incluyendo el <b>2do lugar</b> en Korean Brand Expo colaborando con Nomad.
+                        Optimum es un grupo con <b>10 años</b> de experiencia en el Dance Cover. Representaron a
+                        <b>México</b> en <b>Corea del Sur</b> en el Stage K. Han obtenido múltiples podios nacionales
+                        incluyendo el <b>2do lugar</b> en Korean Brand Expo colaborando con Nomad.
                     </p>
-                    <div class="btn-wrapper">
-                        <a href="#contacto" class="btn btn-cute">CONÓCENOS MÁS</a>
+                    <div class="btn-wrapper" style="justify-content: flex-start;">
+                        <a href="#contacto" class="btn btn-cute"
+                            style="border-radius: 50px; padding: 14px 35px;">CONÓCENOS MÁS</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 2: VIDEOS -->
-        <!-- SECCIÓN 3: INTEGRANTES (MOVED UP) -->
-        <section id="integrantes" class="member-section">
-            <!-- Lore -->
-            <div class="member-container">
-                <div class="member-text-col">
-                    <h2 class="member-title"><i class="fa-solid fa-star"></i> LORE: PASIÓN Y EXPERIENCIA K-POP <i class="fa-solid fa-star blinking-star-small"></i></h2>
-                    <p class="member-description">Hola soy Lore, mi grupo favorito es <b>Super Junior</b>. Tengo <b>12 años</b> en el dance cover. Amo a los <b>perritos</b> y el <b>café</b>.</p>
-                </div>
-                <div class="member-image-col">
-                    <div class="member-carousel-frame">
-                        <div class="carousel-container static-profile">
-                            <img src="./OPTIMUM/Lore/LoreN.webp" alt="Lore Optimum" fetchpriority="high" decoding="sync" style="opacity: 1 !important; display: block; width: 100%;">
-                        </div>
-                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
-                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- Pau -->
-            <div class="member-container reverse">
-                <div class="member-text-col">
-                    <h2 class="member-title"><i class="fa-solid fa-star"></i> PAU: DULZURA Y TÉCNICA REPOSTERA <i class="fa-solid fa-star blinking-star-small"></i></h2>
-                    <p class="member-description">Soy Pau, fan de <b>Super Junior</b> y Chef de <b>repostería coreana</b>. Llevo <b>10 años</b> en Optimum.</p>
-                </div>
-                <div class="member-image-col">
-                    <div class="member-carousel-frame">
-                        <div class="carousel-container static-profile">
-                            <img src="./OPTIMUM/Pau/PauN.webp" alt="Pau Optimum" fetchpriority="high" decoding="sync" style="opacity: 1 !important; display: block; width: 100%;">
-                        </div>
-                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
-                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- Sara -->
-            <div class="member-container">
-                <div class="member-text-col">
-                    <h2 class="member-title"><i class="fa-solid fa-star"></i> SARA: CARISMA Y ENERGÍA VETERINARIA <i class="fa-solid fa-star blinking-star-small"></i></h2>
-                    <p class="member-description">Mi nombre es Sara, fan de <b>ASTRO</b> y <b>veterinaria</b>. <b>11 años</b> moviendo el esqueleto.</p>
-                </div>
-                <div class="member-image-col">
-                    <div class="member-carousel-frame">
-                        <div class="carousel-container static-profile">
-                            <img src="./OPTIMUM/Sara/SaraN.webp" alt="Sara Optimum" fetchpriority="high" decoding="sync" style="opacity: 1 !important; display: block; width: 100%;">
-                        </div>
-                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
-                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- Alo -->
-            <div class="member-container reverse">
-                <div class="member-text-col">
-                    <h2 class="member-title"><i class="fa-solid fa-star"></i> ALO: DISEÑO Y PODER WAACKING <i class="fa-solid fa-star blinking-star-small"></i></h2>
-                    <p class="member-description">Soy Alo, <b>diseñadora gráfica</b> y fan de <b>BTS</b>. Especialista en <b>Waacking</b>.</p>
-                </div>
-                <div class="member-image-col">
-                    <div class="member-carousel-frame">
-                        <div class="carousel-container static-profile">
-                            <img src="./OPTIMUM/Alo/AloN.webp" alt="Alo Optimum" fetchpriority="high" decoding="sync" style="opacity: 1 !important; display: block; width: 100%;">
-                        </div>
-                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
-                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- Dani -->
-            <div class="member-container">
-                <div class="member-text-col">
-                    <h2 class="member-title"><i class="fa-solid fa-star"></i> DANI: CIENCIA Y RITMO BOTÁNICO <i class="fa-solid fa-star blinking-star-small"></i></h2>
-                    <p class="member-description">Soy Dani, <b>biotecnóloga</b> y fan de <b>Le Sserafim</b>. Amante de las <b>plantas</b>.</p>
-                </div>
-                <div class="member-image-col">
-                    <div class="member-carousel-frame">
-                        <div class="carousel-container static-profile">
-                            <img src="./OPTIMUM/Dani/DaniN.webp" alt="Dani Optimum" fetchpriority="high" decoding="sync" style="opacity: 1 !important; display: block; width: 100%;">
-                        </div>
-                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
-                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- Nana -->
-            <div class="member-container reverse">
-                <div class="member-text-col">
-                    <h2 class="member-title"><i class="fa-solid fa-star"></i> NANA: MULTIMEDIA Y PODER ESCÉNICO <i class="fa-solid fa-star blinking-star-small"></i></h2>
-                    <p class="member-description">Mucho gusto, soy Nana, <b>diseñadora multimedia</b> y fan de <b>Blackpink</b>.</p>
-                </div>
-                <div class="member-image-col">
-                    <div class="member-carousel-frame">
-                        <div class="carousel-container static-profile">
-                            <img src="./OPTIMUM/Nana/NanaN.webp" alt="Nana Optimum" fetchpriority="high" decoding="sync" style="opacity: 1 !important; display: block; width: 100%;">
-                        </div>
-                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
-                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN 2: VIDEOS -->
+        <!-- VIDEOS Section -->
         <section id="videos" class="videos-section animated">
             <div class="videos-container">
                 <div class="videos-title-wrapper">
                     <h2 class="videos-title">
-                        <i class="fa-solid fa-camera"></i>
+                        <i class="fa-solid fa-play"></i>
                         NUESTROS VIDEOS
                         <i class="fa-solid fa-star blinking-star-small"></i>
                     </h2>
                     <div class="videos-separator">
-                        <i class="fa-solid fa-heart" style="color: var(--primary-red);"></i>
+                        <i class="fa-solid fa-heart" style="color: var(--primary-red); font-size: 12px;"></i>
                     </div>
                 </div>
 
                 <div class="videos-grid">
+                    <!-- Video 1 -->
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <div class="lite-youtube" data-videoid="FfOCn46P4uY">
-                                    <img src="https://i.ytimg.com/vi/FfOCn46P4uY/hqdefault.jpg" alt="Python Cover" loading="lazy">
+                                <div class="lite-youtube" data-id="-xFLj1i9Fvo">
+                                    <img src="https://img.youtube.com/vi/-xFLj1i9Fvo/hqdefault.jpg"
+                                        alt="Stray Kids - CASE 143 Thumbnail" loading="lazy" decoding="async">
                                     <div class="play-button"><i class="fa-solid fa-play"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="video-info"><h4 class="video-cover-name">PYTHON</h4></div>
+                        <div class="video-info">
+                            <h4 class="video-cover-name">PYTHON</h4>
+                        </div>
                     </div>
+
+                    <!-- Video 2 -->
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <div class="lite-youtube" data-videoid="U0V-E4MvE-8">
-                                    <img src="https://i.ytimg.com/vi/U0V-E4MvE-8/hqdefault.jpg" alt="Gnarly Cover" loading="lazy">
+                                <div class="lite-youtube" data-id="0B9QFDYPlgs">
+                                    <img src="https://img.youtube.com/vi/0B9QFDYPlgs/hqdefault.jpg"
+                                        alt="XG - SHOOTING STAR Thumbnail" loading="lazy" decoding="async">
                                     <div class="play-button"><i class="fa-solid fa-play"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="video-info"><h4 class="video-cover-name">GNARLY</h4></div>
+                        <div class="video-info">
+                            <h4 class="video-cover-name">GNARLY</h4>
+                        </div>
                     </div>
+
+                    <!-- Video 3 -->
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <div class="lite-youtube" data-videoid="HOfz_qC6n7M">
-                                    <img src="https://i.ytimg.com/vi/HOfz_qC6n7M/hqdefault.jpg" alt="Drama Cover" loading="lazy">
+                                <div class="lite-youtube" data-id="bI8iEPuRzY0">
+                                    <img src="https://img.youtube.com/vi/bI8iEPuRzY0/hqdefault.jpg"
+                                        alt="LE SSERAFIM - ANTIFRAGILE Thumbnail" loading="lazy" decoding="async">
                                     <div class="play-button"><i class="fa-solid fa-play"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="video-info"><h4 class="video-cover-name">DRAMA</h4></div>
+                        <div class="video-info">
+                            <h4 class="video-cover-name">DRAMA</h4>
+                        </div>
                     </div>
+
+                    <!-- Video 4 -->
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <div class="lite-youtube" data-videoid="rS63mAs0s6k">
-                                    <img src="https://i.ytimg.com/vi/rS63mAs0s6k/hqdefault.jpg" alt="Armageddon Cover" loading="lazy">
+                                <div class="lite-youtube" data-id="SalTcg_PuTY">
+                                    <img src="https://img.youtube.com/vi/SalTcg_PuTY/hqdefault.jpg"
+                                        alt="NCT DREAM - Candy Thumbnail" loading="lazy" decoding="async">
                                     <div class="play-button"><i class="fa-solid fa-play"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="video-info"><h4 class="video-cover-name">ARMAGEDDON</h4></div>
+                        <div class="video-info">
+                            <h4 class="video-cover-name">ARMAGEDDON</h4>
+                        </div>
                     </div>
+
+                    <!-- Video 5 -->
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <div class="lite-youtube" data-videoid="O9XwGjW_r3g">
-                                    <img src="https://i.ytimg.com/vi/O9XwGjW_r3g/hqdefault.jpg" alt="Midas Touch Cover" loading="lazy">
+                                <div class="lite-youtube" data-id="7wTNp6F5MaE">
+                                    <img src="https://img.youtube.com/vi/7wTNp6F5MaE/hqdefault.jpg"
+                                        alt="IVE - After LIKE Thumbnail" loading="lazy" decoding="async">
                                     <div class="play-button"><i class="fa-solid fa-play"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="video-info"><h4 class="video-cover-name">MIDAS TOUCH</h4></div>
+                        <div class="video-info">
+                            <h4 class="video-cover-name">MIDAS TOUCH</h4>
+                        </div>
                     </div>
+
+                    <!-- Video 6 -->
                     <div class="video-card">
                         <div class="video-glass-container">
                             <div class="video-wrapper">
-                                <div class="lite-youtube" data-videoid="9O6L7f7xR-M">
-                                    <img src="https://i.ytimg.com/vi/9O6L7f7xR-M/hqdefault.jpg" alt="Debut Cover" loading="lazy">
+                                <div class="lite-youtube" data-id="M8CAvVZSkkY">
+                                    <img src="https://img.youtube.com/vi/M8CAvVZSkkY/hqdefault.jpg"
+                                        alt="NewJeans - OMG Thumbnail" loading="lazy" decoding="async">
                                     <div class="play-button"><i class="fa-solid fa-play"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="video-info"><h4 class="video-cover-name">DEBUT - KATSEYE</h4></div>
+                        <div class="video-info">
+                            <h4 class="video-cover-name">DEBUT - KATSEYE</h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Optimum K-pop Dance Cover | Desarrollado por <strong>DEVNITY</strong></p>
+
+        <!-- INTEGRANTES Section -->
+        <section id="integrantes" class="member-section">
+            <div class="member-container">
+                <!-- Left Column: Member Info -->
+                <div class="member-text-col">
+                    <h2 class="member-title">
+                        <i class="fa-solid fa-star"></i>
+                        LORE: Pasión y Experiencia K-pop
+                        <i class="fa-solid fa-star blinking-star-small"></i>
+                    </h2>
+                    <div class="member-separator">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="member-description">
+                        Hola soy Lore, mi grupo favorito es <b>Super Junior</b>, llevo siendo fan desde el <b>2010</b>.
+                        Tengo <b>12 años</b> en el dance cover, doy <b>clases de baile</b>, y tengo una <b>tienda
+                            online</b> de Mangas y coleccionables. Amo a los <b>perritos</b> y el <b>café</b>.
+                    </p>
+                </div>
+
+                <!-- Right Column: Automatic Carousel -->
+                <div class="member-image-col">
+                    <div class="member-carousel-frame">
+                        <div class="carousel-container static-profile">
+                            <img src="OPTIMUM/Lore/Lore_low.png" class="low-res-bg" aria-hidden="true">
+                            <img src="OPTIMUM/Lore/LoreN.png"
+                                srcset="OPTIMUM/Lore/Lore_low.png 100w, OPTIMUM/Lore/LoreN.png 500w"
+                                sizes="(max-width: 600px) 100vw, 500px" alt="Lore Optimum" width="500" height="500"
+                                fetchpriority="high" decoding="sync">
+                        </div>
+                        <!-- Carousel Decorations -->
+                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
+                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- INTEGRANTES Section (PAU) -->
+        <section class="member-section">
+            <!-- Used "reverse" class for zebra layout on Desktop. Responsive maintains Image Top in Mobile -->
+            <div class="member-container reverse">
+                <!-- Text Column: PAU -->
+                <div class="member-text-col">
+                    <h2 class="member-title">
+                        <i class="fa-solid fa-star"></i>
+                        PAU: Sabor y Ritmo Coreano
+                        <i class="fa-solid fa-star blinking-star-small"></i>
+                    </h2>
+                    <div class="member-separator">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="member-description">
+                        Soy Pau, mis grupos favoritos son <b>Super Junior</b>, <b>Mamamoo</b>, <b>MCND</b>, <b>TRIBE</b>
+                        y <b>AleXa</b>. Mi animal favorito es el mapache y los perritos. Soy <b>Chef</b> y tengo mi
+                        emprendimiento de <b>panadería Coreana</b>. Llevo <b>10 años</b> en Optimum.
+                    </p>
+                </div>
+
+                <!-- Image Column: PAU -->
+                <div class="member-image-col">
+                    <div class="member-carousel-frame">
+                        <div class="carousel-container static-profile">
+                            <img src="OPTIMUM/Pau/Pau_low.png" class="low-res-bg" aria-hidden="true">
+                            <img src="OPTIMUM/Pau/PauN.png"
+                                srcset="OPTIMUM/Pau/Pau_low.png 100w, OPTIMUM/Pau/PauN.png 500w"
+                                sizes="(max-width: 600px) 100vw, 500px" alt="Pau Optimum" width="500" height="500"
+                                fetchpriority="high" decoding="sync">
+                        </div>
+                        <!-- Carousel Decorations -->
+                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
+                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTEGRANTES Section (SARA) -->
+        <section class="member-section">
+            <div class="member-container">
+                <!-- Text Column: SARA -->
+                <div class="member-text-col">
+                    <h2 class="member-title">
+                        <i class="fa-solid fa-star"></i>
+                        SARA: Vocación y Entrega
+                        <i class="fa-solid fa-star blinking-star-small"></i>
+                    </h2>
+                    <div class="member-separator">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="member-description">
+                        Mi nombre es Sara, mis grupos fav son <b>SuJu</b>, <b>ASTRO</b> y <b>A.C.E</b>. Soy
+                        <b>veterinaria</b> y me gustan mucho los <b>gatitos</b>. Tengo <b>11 años</b> dentro del Dance
+                        Cover y <b>2 años</b> en Optimum. Espero sigan apoyando al grupo.
+                    </p>
+                </div>
+
+                <!-- Image Column: SARA -->
+                <div class="member-image-col">
+                    <div class="member-carousel-frame">
+                        <div class="carousel-container static-profile">
+                            <img src="OPTIMUM/Sara/Sara_low.png" class="low-res-bg" aria-hidden="true">
+                            <img src="OPTIMUM/Sara/SaraN.png"
+                                srcset="OPTIMUM/Sara/Sara_low.png 100w, OPTIMUM/Sara/SaraN.png 500w"
+                                sizes="(max-width: 600px) 100vw, 500px" alt="Sara Optimum" width="500" height="500"
+                                fetchpriority="high" decoding="sync">
+                        </div>
+                        <!-- Carousel Decorations -->
+                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
+                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTEGRANTES Section (ALO) -->
+        <section class="member-section">
+            <div class="member-container reverse">
+                <!-- Text Column: ALO -->
+                <div class="member-text-col">
+                    <h2 class="member-title">
+                        <i class="fa-solid fa-star"></i>
+                        ALO: Creatividad y Estilo
+                        <i class="fa-solid fa-star blinking-star-small"></i>
+                    </h2>
+                    <div class="member-separator">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="member-description">
+                        ¡Hola! Soy Alo, una apasionada del <b>diseño gráfico</b> y el universo de <b>BTS</b>. Mi estilo
+                        se define por el dibujo, la moda y las obras de <b>Ai Yazawa</b>. Con <b>5 años</b> de
+                        experiencia en el dance cover y casi un año vibrando con <b>Optimum</b>, me especializo en
+                        estilos con mucha personalidad como el <b>vogue</b> y el <b>waacking</b>. (ㆁωㆁ)
+                    </p>
+                </div>
+
+                <!-- Image Column: ALO -->
+                <div class="member-image-col">
+                    <div class="member-carousel-frame">
+                        <div class="carousel-container static-profile">
+                            <img src="OPTIMUM/Alo/Alo_low.png" class="low-res-bg" aria-hidden="true">
+                            <img src="OPTIMUM/Alo/AloN.png"
+                                srcset="OPTIMUM/Alo/Alo_low.png 100w, OPTIMUM/Alo/AloN.png 500w"
+                                sizes="(max-width: 600px) 100vw, 500px" alt="Alo Optimum" width="500" height="500"
+                                fetchpriority="high" decoding="sync">
+                        </div>
+                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
+                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTEGRANTES Section (DANI) -->
+        <section class="member-section">
+            <div class="member-container">
+                <!-- Text Column: DANI -->
+                <div class="member-text-col">
+                    <h2 class="member-title">
+                        <i class="fa-solid fa-star"></i>
+                        DANI: Ciencia y Movimiento
+                        <i class="fa-solid fa-star blinking-star-small"></i>
+                    </h2>
+                    <div class="member-separator">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="member-description">
+                        Soy Dani, <b>Biotecnóloga</b> de profesión y la 'Enfermera Joy' de las plantas por vocación. Fan
+                        de hueso colorado de <b>Le Sserafim</b>, <b>BTS</b> e <b>Infinite</b>. Aunque mi viaje en el
+                        dance cover comenzó hace un año con Optimum, traigo conmigo toda la energía de mis años en
+                        <b>jazz</b> y <b>urbano</b>, disfrutando al máximo el <b>house</b> y el <b>locking</b>.
+                    </p>
+                </div>
+
+                <!-- Image Column: DANI -->
+                <div class="member-image-col">
+                    <div class="member-carousel-frame">
+                        <div class="carousel-container static-profile">
+                            <img src="OPTIMUM/Dani/Dani_low.png" class="low-res-bg" aria-hidden="true">
+                            <img src="OPTIMUM/Dani/DaniN.png"
+                                srcset="OPTIMUM/Dani/Dani_low.png 100w, OPTIMUM/Dani/DaniN.png 500w"
+                                sizes="(max-width: 600px) 100vw, 500px" alt="Dani Optimum" width="500" height="500"
+                                fetchpriority="high" decoding="sync">
+                        </div>
+                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
+                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTEGRANTES Section (NANA) -->
+        <section class="member-section">
+            <div class="member-container reverse">
+                <!-- Text Column: NANA -->
+                <div class="member-text-col">
+                    <h2 class="member-title">
+                        <i class="fa-solid fa-star"></i>
+                        NANA: Multimedia y Energía
+                        <i class="fa-solid fa-star blinking-star-small"></i>
+                    </h2>
+                    <div class="member-separator">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="member-description">
+                        ¡Mucho gusto! Soy Nana, <b>Diseñadora Multimedia</b> y fan de <b>Blackpink</b>, <b>Stray
+                            Kids</b>, <b>Aespa</b> y <b>Seventeen</b>. Mi mundo gira en torno a las Monster High, las
+                        fresitas y, por supuesto, el anime Nana. Cumplo mi primer año en el dance cover entregando todo
+                        el corazón en cada escenario junto a <b>Optimum</b>.
+                    </p>
+                </div>
+
+                <!-- Image Column: NANA -->
+                <div class="member-image-col">
+                    <div class="member-carousel-frame">
+                        <div class="carousel-container static-profile">
+                            <img src="OPTIMUM/Nana/Nana_low.png" class="low-res-bg" aria-hidden="true">
+                            <img src="OPTIMUM/Nana/NanaN.png"
+                                srcset="OPTIMUM/Nana/Nana_low.png 100w, OPTIMUM/Nana/NanaN.png 500w"
+                                sizes="(max-width: 600px) 100vw, 500px" alt="Nana Optimum" width="500" height="500"
+                                fetchpriority="high" decoding="sync">
+                        </div>
+                        <i class="fa-solid fa-heart frame-deco heart-top"></i>
+                        <i class="fa-solid fa-star frame-deco star-bottom"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Other sections will go here -->
+    </main>
+    <footer id="contacto">
     </footer>
+    <!-- Vanilla JS for Lore Carousel -->
     <script src="lore-carousel.js" defer></script>
 </body>
+
 </html>
