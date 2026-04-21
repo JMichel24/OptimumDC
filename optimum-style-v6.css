@@ -137,11 +137,18 @@ body::after {
 }
 
 .opt-title {
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 800;
     color: var(--primary-red);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.opt-description b, 
+.member-description b {
+    color: var(--primary-red);
+    font-weight: 700;
 }
 
 .opt-description {
@@ -187,10 +194,19 @@ body::after {
 
 .member-text-col {
     flex: 1;
-    padding: 40px;
+    padding: 50px;
     background: #fff;
     border-radius: 30px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+}
+
+.member-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--primary-red);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 .member-image-col {
@@ -273,7 +289,7 @@ body::after {
     border-radius: 15px !important;
     color: #333;
     font-size: 16px;
-    font-family: inherit;
+    font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
     text-align: left;
 }
