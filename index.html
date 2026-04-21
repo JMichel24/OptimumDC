@@ -10,7 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <link rel="stylesheet" href="optimum-style-v6.css">
+    <link rel="stylesheet" href="optimum-v7.css">
+    <!-- Inline Override for Absolute UI Reliability (Cache-Busting) -->
+    <style>
+        .site-logo { max-width: 60px !important; width: 60px !important; height: auto !important; }
+        .logo-container { flex-shrink: 0; display: flex; align-items: center; }
+        .opt-title, .member-title, .opt-description b, .member-description b { color: #FE2105 !important; }
+        .member-text-col, .opt-text-col { border-radius: 30px !important; box-shadow: 0 30px 60px rgba(0,0,0,0.08) !important; }
+    </style>
     <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
