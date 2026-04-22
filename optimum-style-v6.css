@@ -385,14 +385,30 @@ body::after {
 }
 
 /* Member Sections */
-.members-main-title {
-    text-align: center;
-    color: var(--primary-red);
-    font-size: 32px;
-    font-weight: 800;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    width: 100%;
+h2.integrantes-titulo {
+    text-align: center; /* Centrado perfecto */
+    color: #FE2105; /* El rojo-naranja vibrante de Optimum */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800 !important; /* Super negrita para máximo impacto */
+    font-size: 3rem; /* Tamaño grande y legible en PC */
+    letter-spacing: 2px; /* Espaciado entre letras para un look moderno */
+    text-transform: uppercase; /* Todo en mayúsculas */
+    margin-top: 60px !important; /* Espacio generoso arriba para respirar */
+    margin-bottom: 40px !important; /* Espacio abajo antes de las fotos */
+    position: relative;
+    display: inline-block; /* Para que la línea de abajo se ajuste al texto */
+}
+
+/* Añade una línea decorativa sutil debajo del título */
+h2.integrantes-titulo::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 4px;
+    background-color: #FE2105;
+    border-radius: 2px;
 }
 
 .member-section {
