@@ -130,38 +130,6 @@ body::after {
     color: var(--primary-red) !important;
 }
 
-/* Social Icons */
-.social-icons {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.social-link {
-    font-size: 20px;
-    text-decoration: none;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.social-link:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
-}
-
-.social-link.youtube {
-    color: var(--youtube-red);
-}
-
-.social-link.instagram {
-    background: linear-gradient(45deg, var(--insta-start), var(--insta-end));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.social-link.tiktok {
-    color: var(--tiktok-black);
-}
 
 /* Animations */
 @keyframes blink {
