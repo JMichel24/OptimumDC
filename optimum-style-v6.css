@@ -390,6 +390,8 @@ body::after {
     text-align: center;
     margin-top: 100px !important; /* Margen generoso para separar de videos */
     margin-bottom: 60px !important;
+    padding-left: 0 !important; /* Limpieza para centrado absoluto */
+    padding-right: 0 !important;
 }
 
 h2.integrantes-titulo {
@@ -401,14 +403,19 @@ h2.integrantes-titulo {
     text-transform: uppercase;
     position: relative;
     display: inline-block;
-    margin: 0;
+    margin-left: auto !important; /* Refuerzo de centrado */
+    margin-right: auto !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 h2.integrantes-titulo::after {
     content: '';
     position: absolute;
     bottom: -15px;
-    left: 20%;
+    left: 50%; /* Centrado absoluto respecto al texto */
+    transform: translateX(-50%);
     width: 60%;
     height: 5px;
     background-color: #FE2105;
