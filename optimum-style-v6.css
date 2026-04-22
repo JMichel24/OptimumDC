@@ -11,30 +11,19 @@
     --font-main: 'Poppins', sans-serif;
 }
 
-html, body {
-    overflow-x: hidden; /* Evita que la página se mueva a los lados */
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-main);
-    background-color: var(--bg-white);
-    background-image: radial-gradient(circle, #FE2105 1px, transparent 1px), radial-gradient(circle, #FFC78A 1.5px, transparent 1.5px);
-    background-size: 40px 40px, 60px 60px;
-    background-attachment: fixed;
-    scroll-behavior: smooth;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-white);
+    background-image: radial-gradient(circle, #FE2105 1px, transparent 1px), radial-gradient(circle, #FFC78A 1.5px, transparent 1.5px);
+    background-size: 40px 40px, 60px 60px;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 
 body::after {
@@ -219,22 +208,14 @@ body::after {
 }
 
 /* Sections Common */
-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra todo el contenido internamente */
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    clear: both;
-    overflow: visible;
-}
-
 .optimum-about,
 .member-section,
 .videos-section {
     width: 100%;
+    position: relative;
+    display: block;
+    clear: both;
+    overflow: visible;
 }
 
 /* About Section */
