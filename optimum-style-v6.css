@@ -905,6 +905,13 @@ h2.integrantes-titulo::after {
     z-index: 1000;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: 0 10px 25px rgba(254, 33, 5, 0.3);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 .back-to-top:hover {
