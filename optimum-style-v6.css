@@ -384,31 +384,52 @@ body::after {
     opacity: 0;
 }
 
-/* Member Sections */
-h2.integrantes-titulo {
-    text-align: center; /* Centrado perfecto */
-    color: #FE2105; /* El rojo-naranja vibrante de Optimum */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800 !important; /* Super negrita para máximo impacto */
-    font-size: 3rem; /* Tamaño grande y legible en PC */
-    letter-spacing: 2px; /* Espaciado entre letras para un look moderno */
-    text-transform: uppercase; /* Todo en mayúsculas */
-    margin-top: 60px !important; /* Espacio generoso arriba para respirar */
-    margin-bottom: 40px !important; /* Espacio abajo antes de las fotos */
-    position: relative;
-    display: inline-block; /* Para que la línea de abajo se ajuste al texto */
+/* Member Sections Header */
+.integrantes-header-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px !important; /* Margen generoso para separar de videos */
+    margin-bottom: 60px !important;
 }
 
-/* Añade una línea decorativa sutil debajo del título */
+h2.integrantes-titulo {
+    color: #FE2105;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900 !important; /* Peso máximo para impacto */
+    font-size: 3.5rem; /* Headline principal */
+    letter-spacing: 4px; /* Espaciado moderno */
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
 h2.integrantes-titulo::after {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 25%;
-    width: 50%;
-    height: 4px;
+    bottom: -15px;
+    left: 20%;
+    width: 60%;
+    height: 5px;
     background-color: #FE2105;
-    border-radius: 2px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .integrantes-header-container {
+        margin-top: 60px !important;
+        margin-bottom: 40px !important;
+    }
+    
+    h2.integrantes-titulo {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    
+    h2.integrantes-titulo::after {
+        height: 3px;
+        bottom: -10px;
+    }
 }
 
 .member-section {
