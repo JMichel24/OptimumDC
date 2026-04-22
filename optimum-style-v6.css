@@ -24,7 +24,6 @@ body {
     background-size: 40px 40px, 60px 60px;
     background-attachment: fixed;
     scroll-behavior: smooth;
-    overflow-x: hidden; /* Elimina rastro de scroll lateral */
 }
 
 body::after {
@@ -532,7 +531,7 @@ body::after {
 }
 
 .videos-container {
-    max-width: 1200px; /* Restricción para asegurar que no se expandan más allá del centro */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -571,10 +570,9 @@ body::after {
 }
 
 .videos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Gap base, compensado con margin en cards */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 .video-card {
@@ -586,8 +584,6 @@ body::after {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    flex: 0 1 380px !important; /* Restricción estricta de escala */
-    margin: 15px; /* Aire entre videos */
 }
 
 .video-card::before {
@@ -955,51 +951,5 @@ body::after {
 
     .main-nav {
         display: flex !important;
-    }
-}
-
-/* Ajustes específicos para Móvil (768px) */
-@media (max-width: 768px) {
-    /* Ajuste de Integrantes */
-    .member-image-col {
-        flex: 0 0 auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .carousel-container,
-    .carousel-container img {
-        max-width: 160px !important;
-        height: auto !important;
-        margin: 0 auto;
-    }
-
-    .member-carousel-frame {
-        max-width: 184px; /* 160px image + padding */
-        margin: 0 auto;
-    }
-
-    .member-text-col {
-        text-align: center;
-        padding: 25px !important;
-    }
-
-    .member-title,
-    .member-separator {
-        justify-content: center;
-    }
-
-    /* Ajuste de Grupo */
-    .about-image {
-        width: 95% !important;
-        max-width: none !important;
-        margin: 0 auto;
-    }
-
-    .cute-frame {
-        width: 100%;
-        padding: 10px;
     }
 }
