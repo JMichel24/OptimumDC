@@ -958,11 +958,11 @@ body::after {
 @media (max-width: 768px) {
     #nosotros img.about-image {
         width: 95% !important;
-        max-width: 500px !important;
+        max-width: 100% !important;
         height: auto !important;
-        margin: 15px auto !important;
+        margin: 10px auto !important;
         display: block !important;
-        border-radius: 8px;
+        border-radius: 12px;
     }
 
     #nosotros .opt-container {
