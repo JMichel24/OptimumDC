@@ -953,3 +953,20 @@ body::after {
         display: flex !important;
     }
 }
+
+/* Optimización de Imagen Grupal - Mobile UX */
+@media (max-width: 768px) {
+    #nosotros img.about-image {
+        width: 95% !important;
+        max-width: 500px !important;
+        height: auto !important;
+        margin: 15px auto !important;
+        display: block !important;
+        border-radius: 8px;
+    }
+
+    #nosotros .opt-container {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}
