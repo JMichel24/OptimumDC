@@ -385,6 +385,16 @@ body::after {
 }
 
 /* Member Sections */
+.members-main-title {
+    text-align: center;
+    color: var(--primary-red);
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
 .member-section {
     padding: 80px 20px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 242, 225, 0.8));
