@@ -531,7 +531,8 @@ body::after {
 }
 
 .videos-container {
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1400px; /* Permite que la galería se expanda en PC */
     margin: 0 auto;
 }
 
@@ -541,6 +542,7 @@ body::after {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .videos-title {
@@ -570,9 +572,10 @@ body::after {
 }
 
 .videos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Más espacio entre videos */
 }
 
 .video-card {
@@ -584,6 +587,8 @@ body::after {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    flex: 1 1 400px; /* Tamaño base de 400px, pero pueden crecer */
+    max-width: 500px;
 }
 
 .video-card::before {
