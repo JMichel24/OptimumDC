@@ -31,8 +31,10 @@
         <div class="header-container">
             <!-- Logotype Integration -->
             <div class="logo-area">
-                <img src="Logo/Logo2.png" alt="OPTIMUM Logo" class="site-logo" decoding="async"
-                    style="width: 60px !important; height: auto;">
+                <a href="#inicio" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="Logo/Logo2.png" alt="OPTIMUM Logo" class="site-logo" decoding="async"
+                        style="width: 60px !important; height: auto;">
+                </a>
             </div>
 
             <div id="hamburger-menu">
@@ -470,10 +472,7 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <a href="#inicio" class="back-to-top" title="Volver arriba">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
+
     <!-- Vanilla JS for Lore Carousel -->
     <script src="lore-carousel.js" defer></script>
     <script>
@@ -528,15 +527,7 @@
             openContactForm();
         });
 
-        // Back to Top functionality
-        const backToTopBtn = document.querySelector('.back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
-        });
+
     </script>
 </body>
 
